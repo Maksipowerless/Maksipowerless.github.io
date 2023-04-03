@@ -272,3 +272,46 @@ div.contacts {
   object-fit: contain;
   cursor: zoom-out;
 }
+
+/* Форма запроса */
+.request div {
+	font-size: 30px;
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+	padding: 100px 700px;
+	text-align: center;
+}
+
+.request label {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.request input[type="text"],
+.request textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  margin-bottom: 20px;
+	font-size: 18px;
+}
+
+.request input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+	font-size: 20px;
+}
+
+.request input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
