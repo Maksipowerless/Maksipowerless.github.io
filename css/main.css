@@ -1,0 +1,274 @@
+/* Общие стили */
+body {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #333;
+	margin: 0;
+	position: relative;
+  min-height: 100vh;
+}
+
+a {
+	color: #333;
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* Стили header */
+header {
+	background-color: #fff;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+	padding: 10px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1;
+}
+
+.logo {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+  margin-right: 10px;
+}
+
+nav ul {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+  padding-right: 50px;
+}
+
+nav li {
+	margin-left: 0.5%;
+  font-size: 22px;
+}
+
+nav a {
+	display: block;
+	padding: 10px;
+}
+
+nav a:hover {
+	background-color: #E0E0E0;
+}
+
+nav a.underlined {
+  text-decoration: underline;
+	text-underline-offset: 10px;
+}
+
+/* Стили основной части сайта */
+main {
+	margin-top: 80px;
+}
+
+.intro div {
+  display: flex;
+	align-items: center;
+	justify-content: center;
+  padding-right: 50px;
+	min-height: 500px;
+
+}
+
+.intro li {
+  padding: 20px;
+}
+
+.intro {
+	position: relative;
+	color: #fff;
+	padding: 100px 20px;
+	text-align: center;
+}
+
+.intro::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(../images/main/intro-bg.jpg);
+  background-size: cover;
+  opacity: 0.7;
+  z-index: -1;
+}
+
+.about_us {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+	min-height: 700px;
+	text-align: center;
+}
+
+.block {
+  width: calc((100% - 40%) / 2); /* вычисляем ширину блока, оставшуюся после выделения 40% на два боковых блока */
+}
+
+.left {
+	position: relative;
+	height: 500px;
+}
+
+.block.left img {
+  width: 20%; /* или любой другой процент или конкретное значение в пикселях */
+  height: auto; /* чтобы сохранить пропорции картинки */
+	position: absolute;
+	bottom: 0;
+	left: 100px;
+	opacity: 0.8;
+}
+
+.center {
+  width: 40%; /* центральный блок занимает 60% ширины контейнера */
+  /* стили центрального блока */
+}
+
+.right {
+  /* стили правого блока */
+}
+
+.about_us  h1 {
+	font-size: 35px;
+	font-family: 'Roboto Slab', serif;
+	margin: 0;
+}
+
+.about_us p {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Roboto Slab', serif;
+}
+
+.btn {
+	background-color: #ff6c37;
+	border: none;
+	color: #fff;
+	display: inline-block;
+	padding: 10px 20px;
+	text-transform: uppercase;
+	transition: background-color 0.3s;
+}
+
+.btn:hover {
+	background-color: #ff5c26;
+}
+
+.services {
+	background-color: #fff;;
+	padding: 100px 20px;
+	text-align: center;
+	min-height: 500px;
+}
+
+.services h2 {
+	font-size: 36px;
+	margin-top: 0;
+}
+
+.services ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.services li {
+	background-color: #fff;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	margin: 20px;
+	padding: 20px;
+	width: 300px;
+}
+
+.services li:hover {
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.services li h3 {
+	font-size: 24px;
+	margin-top: 0;
+}
+
+div.contacts_back {
+	background-size: cover;
+	text-align: center;
+  align-items: center;
+  justify-content: center;
+	background-image: url(../images/contacts/back.jpg);
+	background-position: 10px  40px;
+	min-height: 100vh;
+	overflow: hidden;
+}
+
+div.contacts {
+	position: absolute;
+	left: 17%;
+  bottom: 20%;
+	font-size: 24px;
+}
+
+.contacts_back h1 {
+	font-size: 35px;
+}
+
+
+/* Галерея изображений */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px; /* отступы между элементами */
+  margin-top: 120px;
+}
+
+.gallery-item {
+  flex: 1 0 25%; /* ширина элемента в зависимости от количества */
+  margin: 20px; /* отступы между элементами */
+}
+
+.gallery-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+	border: 1px solid #000;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5); /* тень вокруг изображения */
+  transition: transform 0.3s ease-in-out; /* плавный переход при наведении */
+}
+
+.gallery-item img:hover {
+  transform: scale(1.1); /* увеличение изображения при наведении */
+	cursor: zoom-in;
+}
+
+.fullscreen {
+  position: fixed;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fullscreen img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  cursor: zoom-out;
+}
