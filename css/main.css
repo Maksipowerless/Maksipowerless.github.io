@@ -74,24 +74,10 @@ main {
 	margin-top: 80px;
 }
 
-.intro div {
-  display: flex;
-	align-items: center;
-	justify-content: center;
-  padding-right: 50px;
-	min-height: 500px;
-
-}
-
-.intro li {
-  padding: 20px;
-}
-
 .intro {
 	position: relative;
-	color: #fff;
-	padding: 100px 20px;
-	text-align: center;
+	padding-bottom: 100px;
+	box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.4);
 }
 
 .intro::before {
@@ -105,6 +91,48 @@ main {
   background-size: cover;
   opacity: 0.7;
   z-index: -1;
+}
+
+.reviews {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.reviews h2 {
+  font-size: 38px;
+  margin-bottom: 50px;
+}
+
+.review {
+  display: inline-block;
+  width: 300px;
+  padding: 20px;
+  margin: 20px 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.review:hover {
+	box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.6);
+}
+
+.review img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.review h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.review p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
 }
 
 .about_us {
@@ -168,41 +196,6 @@ main {
 	background-color: #ff5c26;
 }
 
-.services {
-	background-color: #fff;;
-	padding: 100px 20px;
-	text-align: center;
-	min-height: 500px;
-}
-
-.services h2 {
-	font-size: 36px;
-	margin-top: 0;
-}
-
-.services ul {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-}
-
-.services li {
-	background-color: #fff;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-	margin: 20px;
-	padding: 20px;
-	width: 300px;
-}
-
-.services li:hover {
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.services li h3 {
-	font-size: 24px;
-	margin-top: 0;
-}
-
 div.contacts_back {
 	background-size: cover;
 	text-align: center;
@@ -223,6 +216,48 @@ div.contacts {
 
 .contacts_back h1 {
 	font-size: 35px;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 100px;
+}
+
+.service {
+  width: 20%;
+  background-color: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  margin-bottom: 60px;
+}
+
+.service:hover img {
+	opacity: 1;
+}
+
+.service img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+	opacity: 0.8;
+}
+
+.service h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.service p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.services-section h2 {
+	text-align: center;
+  font-size: 38px;
+  margin-top: 100px;
 }
 
 
@@ -275,43 +310,56 @@ div.contacts {
 
 /* Форма запроса */
 .request div {
-	font-size: 30px;
+	font-size: 20px;
   background-color: #f8f8f8;
-  padding: 20px;
+  padding-bottom: 100px;
+	padding-top: 50px;
   border-radius: 5px;
-  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
-	padding: 100px 700px;
+  box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.2);
+}
+
+.request h1 {
+	font-size: 38px;
+	padding-bottom: 10px;
 	text-align: center;
 }
 
-.request label {
-  display: inline-block;
-  margin-bottom: 10px;
+form {
+  max-width: 400px;
+  margin: 0 auto;
 }
 
-.request input[type="text"],
-.request textarea {
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+	font-size: 20px;
+}
+
+input[type="text"],
+input[type="tel"] {
+  display: block;
+	font-size: 18px;
+  width: 100%;
   padding: 10px;
   border-radius: 5px;
-  border: none;
-  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
-  width: 100%;
+  border: 1px solid #ccc;
   margin-bottom: 20px;
-	font-size: 18px;
 }
 
-.request input[type="submit"] {
+button[type="button"] {
   background-color: #4CAF50;
   color: white;
-  padding: 10px 20px;
+  padding: 15px 25px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
-  transition: all 0.3s ease-in-out;
-	font-size: 20px;
+	display: block;
+	margin: 0 auto;
+	margin-top: 35px;
 }
 
-.request input[type="submit"]:hover {
-  background-color: #3e8e41;
+button[type="button"]:hover {
+	  background-color: #0f6613;
 }
