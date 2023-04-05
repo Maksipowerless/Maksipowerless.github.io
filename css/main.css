@@ -363,3 +363,74 @@ button[type="button"] {
 button[type="button"]:hover {
 	  background-color: #0f6613;
 }
+
+footer {
+  background-color: dimgrey;
+  color: white;
+  padding: 4px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+footer p {
+	margin: 8px;
+}
+
+.container {
+  max-width: 2000px; /* ограничиваем максимальную ширину контейнера */
+  margin: 0 auto; /* центрируем контейнер на странице */
+}
+
+h1 {
+  font-size: 2.5rem; /* увеличиваем размер заголовка */
+  text-align: center; /* центрируем заголовок */
+  margin-bottom: 2rem; /* добавляем отступ вниз от заголовка */
+}
+
+.price-table {
+  display: flex; /* задаем флекс-контейнер */
+  flex-wrap: wrap; /* переносим блоки на новую строку, если места не хватает */
+  justify-content: center; /* центрируем блоки по горизонтали */
+  gap: 2rem; /* добавляем отступ между блоками */
+	padding: 50px 0;
+}
+
+.price-item {
+  flex-basis: calc(50% - 1rem); /* задаем ширину блоков на половину контейнера и вычитаем отступы */
+  background-color: #DBDBDB; /* добавляем фоновый цвет */
+  padding: 2rem; /* добавляем отступы внутри блоков */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* добавляем тень */
+  transition: all 0.3s ease; /* задаем плавный переход при наведении на блок */
+}
+
+.price-item:hover {
+  transform: translateY(-5px); /* поднимаем блок при наведении на него */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); /* увеличиваем тень при наведении на блок */
+}
+
+.price-header {
+  display: flex; /* задаем флекс-контейнер */
+  justify-content: space-between; /* размещаем элементы по краям */
+  align-items: center; /* выравниваем элементы по вертикали */
+  margin-bottom: 1rem; /* добавляем отступ вниз от заголовка */
+}
+
+.price {
+  font-weight: bold; /* делаем цену жирной */
+}
+
+.price-body {
+  margin-top: 1rem; /* добавляем отступ сверху от списка */
+}
+
+
+ul {
+  margin: 0; /* убираем отступы у списка */
+  padding: 0; /* убираем отступы у списка */
+}
+
+li {
+  list-style: none; /* убираем маркеры у списка */
+  margin-bottom: 0.5rem; /* добавляем отступ вниз от каждого пункта списка */
+}
